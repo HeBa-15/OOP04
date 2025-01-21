@@ -93,7 +93,7 @@ namespace OOP04
             //Arr02 = (int[])Arr01.Clone(); Console.WriteLine("Deep Copy");
             //// Clone Method: Will Generate new Object with new and different Identity
             ////               This Object will have the same State [Data] of the Caller Object 
-           
+
             #endregion
 
             //Console.WriteLine($"Arr01.GetHashCode() = {Arr01.GetHashCode()}");
@@ -108,6 +108,28 @@ namespace OOP04
             //{
             //    Console.WriteLine(numbers);
             //} 
+
+            #endregion
+
+
+            #region Why Clone Method Description says it makes a shallow Copy ?
+
+            //string[] Names01 = ["Amr","Mona"];
+            //string[] Names02 = ["Ahmed","Yassmin"];
+
+            //Console.WriteLine($"Arr01.GetHashCode() = {Names01.GetHashCode()}");
+            //Console.WriteLine($"Arr02.GetHashCode() = {Names02.GetHashCode()}");
+
+            //Names02 = (string[])Names01.Clone(); Console.WriteLine("Deep Copy");
+
+            //// Clone Method: Will Generate new Object with new and different Identity
+            ////               This Object will have the same State [Data] of the Caller Object 
+            
+            //Console.WriteLine($"Arr01.GetHashCode() = {Names01.GetHashCode()}");
+            //Console.WriteLine($"Arr02.GetHashCode() = {Names02.GetHashCode()}");
+
+            //Names02[0] = "Khalid";
+            //Console.WriteLine(Names01[0]); // Amr
 
             #endregion
 
