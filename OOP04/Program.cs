@@ -1,4 +1,5 @@
-﻿using OOP04.Interface_Example02;
+﻿using OOP04.Built_in_Interface;
+using OOP04.Interface_Example02;
 
 namespace OOP04
 {
@@ -137,26 +138,41 @@ namespace OOP04
             #region ICloneable Interface
 
             //Employee employee01 = new Employee() { id = 10, Name = "Ahmed", Salary = 8_000, Department = new Department() {Code = 1001 , Title = "Sales" }} ;
-            
+
             //Employee employee02 = new Employee() { id = 20, Name = "Omnia", Salary = 4_000, Department = new Department() {Code = 2002,Title = "HR" } };
-           
+
             //Console.WriteLine($"employee01.GetHashCode() = {employee01.GetHashCode()}");
             //Console.WriteLine($"employee02.GetHashCode() = {employee02.GetHashCode()}");
-            
+
             //employee02 = (Employee)employee01.Clone(); // Deep copy using Clone
             //                                           // Clone Method: this method will generate New object with new and different Identity
             //                                           //               this object will have the same state [Data] of the caller object
             //Console.WriteLine("After Deep Copy");
-            
+
             //if (employee02.Department != null)
             //    employee02.Department.Title = "New";
-           
+
             //Console.WriteLine($"employee01.GetHashCode() = {employee01.GetHashCode()}");
             //Console.WriteLine($"employee02.GetHashCode() = {employee02.GetHashCode()}");
             //Console.WriteLine("---------------------");
             //Console.WriteLine($"employee01 {employee01.Department.Title}"); 
-            
+
             #endregion
+
+
+            Employee[] employees =
+            {
+                new Employee() {id=10,Name="Ahmed", Salary=8_000},
+                new Employee() {id=20,Name="Omnia", Salary=2_000},
+                new Employee() {id=30,Name="Nadia", Salary=10_000},
+                new Employee() {id=40,Name="Omar", Salary=6_000},
+
+            };
+
+            Array.Sort(employees);
+            
+            foreach(Employee employee in employees)
+                Console.WriteLine(employee);
 
 
         }

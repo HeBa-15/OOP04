@@ -8,5 +8,6 @@ namespace OOP04.Interface_Example03
 {
     internal class Vechile
     {
+        public int Speed { get; set; }
     }
 }

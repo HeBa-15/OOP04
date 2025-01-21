@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace OOP04.Built_in_Interface
 {
-    internal class Department
+    internal class Department : ICloneable
     {
+        public int Code { get; set; }
+        public string? Title { get; set; }
+        public object Clone()
+        {
+            return new Department()
+            {
+                Code = Code,
+                Title = Title
+            };
+        }
     }
 }

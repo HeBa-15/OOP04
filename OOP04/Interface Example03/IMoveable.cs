@@ -8,5 +8,9 @@ namespace OOP04.Interface_Example03
 {
     internal interface IMoveable
     {
+        void Forward();
+        void Backward();
+        void Left();
+        void Right();
     }
 }
