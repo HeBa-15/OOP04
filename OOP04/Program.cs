@@ -57,6 +57,19 @@ namespace OOP04
             //
             #endregion
 
+
+            #region Interface Example 03
+
+            //Airplane airplane = new Airplane();
+            //airplane.Speed = 480;
+            ////airplane.forward();
+            //IMoveable moveable = airplane;
+            //moveable.Forward();
+            //IFlyable flyable = airplane;
+            //flyable.Forward();
+
+            #endregion
+
         }
     }
 }
