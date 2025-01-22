@@ -68,13 +68,24 @@
 
 
             #region Q10:How can a C# class implement multiple interfaces?
-           
+
             // c) By separating interface names with commas
 
             #endregion
 
             #endregion
 
+            #region Part02 Q1
+
+            ICircle circle = new Circle { Radius = 6 };
+            circle.DisplayShapeInfo();
+
+            IRectangle rectangle = new Rectangle { Length = 4, Width = 6 };
+            rectangle.DisplayShapeInfo();
         }
+
+        #endregion
+
     }
+   
 }
